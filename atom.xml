@@ -2,14 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wyb20181.github.io/</id>
     <title>Gridea</title>
-    <updated>2019-12-29T17:23:16.155Z</updated>
+    <updated>2020-01-07T11:26:38.452Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://wyb20181.github.io/"/>
     <link rel="self" href="https://wyb20181.github.io//atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://wyb20181.github.io//images/avatar.png</logo>
     <icon>https://wyb20181.github.io//favicon.ico</icon>
-    <rights>All rights reserved 2019, Gridea</rights>
+    <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[android   dp px sp的区别]]></title>
+        <id>https://wyb20181.github.io//post/android-dp-px-sp</id>
+        <link href="https://wyb20181.github.io//post/android-dp-px-sp">
+        </link>
+        <updated>2020-01-07T10:39:38.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://wyb20181.github.io//post-images/1578393622765.png" alt=""></figure>
+<p>“in”<br>
+inches的缩写，英寸。就是屏幕的物理长度单位。一英寸等于2.54cm。比如Android手机常见的尺寸有5寸、5.5寸、6寸等，这里的长度都是指手机对角线的长度。</p>
+<p>pt<br>
+“points” 的缩写，点。一个点等于1/72英寸，所以“点”也是个长度单位而已。</p>
+<p>px<br>
+“pixel” 的缩写，像素。是画面显示的基本单位，真实的像素并不是点或者方块（虽然有时这样显示），也没有实际固定长度，只是一个抽象的取样。设计中的像素和实际显示屏上的像素相对应。</p>
+<p>dpi<br>
+&quot;dots per inch&quot; 的缩写，“每英寸的像素数”，即像素密度。下图展示了600 dpi和1200 dpi的对比，明显后者的像素更加密集。</p>
+<p>sp: Scale-independent Pixel，即与缩放无关的抽象像素。sp和dp很类似但唯一的区别是，Android系统允许用户自定义文字尺寸大小（小、正常、大、超大等等），当文字尺寸是“正常”时，1sp=1dp=0.00625英寸，而当文字尺寸是“大”或“超大”时，1sp&gt;1dp=0.00625英寸。类似我们在windows里调整字体尺寸以后的效果——窗口大小不变，只有文字大小改变。</p>
+<p>dip (dp)<br>
+Density Independent Pixels 密度无关像素</p>
+<p>安卓手机种类多样，有各种屏幕像素密度。比如120dpi是低密度（ldpi）类型，160dpi 是中密度（mdpi），240dpi是高密度（hdpi)，320dpi是超高密度（xhdpi），480dpi是超超高密度（xxhdpi）。</p>
+<p>px= dp *（dpi/160）  可以看出px正比于dp和dpi(密度),当dpi屏幕密度相同屏幕尺寸较大其比例看起来就会较小。针对这种情况google为我们提供了一个百分比布局兼容库：Android Percent Support Library，解决了上述的问题，目前它支持RelativeLayout和FrameLayout的百分比布局，不过已经有大牛在GitHub上面开源了LinearLayout的百分比布局支持库。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://wyb20181.github.io//post/hello-gridea</id>
